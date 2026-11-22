@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#4b1268">
+  <meta name="description" content="LIBERNIUM 2026 at CHRIST University, Bangalore Bannerghatta Road Campus, Department of Liberal Arts.">
+  <title>LIBERNIUM 2026 | Department of Liberal Arts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Libernium home"><span>LIBERNIUM <small>2026 · LIBERATI</small></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav id="nav" aria-label="Main navigation">
+    <a href="#home">Home</a><a href="#research">Researchers</a><a href="#people">Faculty & Team</a><a href="#programme">Programme</a><a href="#venues">Venues</a><a href="#assistant" class="nav-cta">Ask AI</a><a href="#concept">Concept Note</a>
+  </nav>
+</header>
+<main>
+<section class="page home-page" id="home">
+  <div class="home-identity-wrap">
+    <img class="home-identity-art" src="{{ url_for('static', filename='images/libernium-home-header-clean.jpg') }}" alt="Liberati and CHRIST logos, CHRIST Deemed to be University, Bangalore Bannerghatta Road Campus, Department of Liberal Arts, and LIBERNIUM 2026 logo">
+  </div>
+</section>
+
+<section class="page section-pad intro-page" id="research">
+  <div class="section-label">01 / RESEARCH & SCHOLARS</div>
+  <div class="section-heading"><div><p class="eyebrow">RESEARCH COMMUNITY</p><h2>Curiosity that<br><em>moves ideas forward.</em></h2></div><p>Meet the speakers, practitioners and contributors featured in LIBERNIUM 2026.</p></div>
+  <div id="researchGrid" class="people-grid compact-grid"></div>
+</section>
+
+<section class="page section-pad people-page" id="people">
+  <div class="section-label">02 / FACULTY & STUDENT COORDINATORS</div>
+  <div class="section-heading"><div><p class="eyebrow">THE PEOPLE BEHIND THE EVENT</p><h2>Many hands.<br><em>One shared purpose.</em></h2></div><p>Faculty, event leadership, PhD scholars and student coordinators supporting LIBERNIUM 2026.</p></div>
+  <div class="people-tabs" role="group" aria-label="Filter people"><button class="active" data-group="All">Everyone</button><button data-group="Faculty">Faculty</button><button data-group="PhD Scholars">PhD Scholars</button><button data-group="Student Coordinators">Student Coordinators</button><button data-group="Event Guests">Event Guests</button></div>
+  <div id="peopleGrid" class="people-grid"></div>
+  <div class="coordinator-strip"><div><span class="online-dot"></span><b>Overall Event Coordinator</b><p>Dr. Embassy Lawbei</p></div><div><span class="online-dot"></span><b>Overall Student Coordinators · Liberal Arts</b><p>Jiyaa P. Shah · +91 84310 13872<br>Sifat Puri · +91 92166 66136</p></div></div>
+</section>
+
+<section class="page section-pad programme-page" id="programme">
+  <div class="section-label">03 / EVENT PROGRAMME</div>
+  <div class="section-heading"><div><p class="eyebrow">24 NOVEMBER 2026</p><h2>A day in <em>motion.</em></h2></div><p>Explore the inauguration, panel discussion, artisan demonstrations and three concurrent workshops.</p></div>
+  <div class="day-banner"><div><strong>LIBERNIUM 2026</strong><span>One-day experiential programme</span></div><div><strong>9 AM — 4 PM</strong><span>CHRIST · BGR Campus</span></div></div>
+  <div id="scheduleList" class="schedule-list"></div>
+  <div class="workshop-heading"><p class="eyebrow">HANDS-ON EXPERIENCES</p><h3>Choose a workshop. <em>Make an impact.</em></h3></div>
+  <div id="workshopGrid" class="workshop-grid"></div>
+  <div class="panel-card"><div class="panel-art">THE COST<br>OF BEING<br><em>COOL.</em></div><div><p class="eyebrow">FEATURED PANEL · 10:30 AM – 12:00 PM</p><h3>The Cost of Being Cool</h3><p>An engaging discussion exploring consumer culture, fast fashion, social media trends, and the hidden environmental and social costs of staying fashionable and socially relevant.</p><ul id="panelSpeakers"></ul><p class="muted">Venue: Mini Auditorium · Second Floor</p></div></div>
+  <div class="stall-note"><span class="leaf-mark">✳</span><div><b>Artisan Stalls & Demonstrations · 12:00–2:30 PM</b><p>Explore weaving, leatherwork and upcycling through live demonstrations by local artisans.</p></div></div>
+</section>
+
+<section class="page section-pad venue-page" id="venues">
+  <div class="section-label">04 / CAMPUS NAVIGATION</div>
+  <div class="section-heading"><div><p class="eyebrow">FIND YOUR WAY</p><h2>Know where<br><em>to go.</em></h2></div><p>Venue directions based on the details shared by the event team. Follow campus signage and on-site volunteer guidance.</p></div>
+  <div id="venueGrid" class="venue-grid"></div>
+</section>
+
+
+
+<section class="page section-pad assistant-page" id="assistant">
+  <div class="section-label">06 / EVENT ASSISTANT</div>
+  <div class="assistant-card"><div><p class="eyebrow">LIBERNIUM EVENT GUIDE</p><h2>Questions?<br><em>Start here.</em></h2><p>Ask about the programme, workshops, speakers, people or campus venues. The assistant uses the event information provided by the organisers.</p><div class="assistant-points"><span>Programme-aware</span><span>Venue guidance</span><span>People directory</span></div></div>
+    <div class="chat"><div class="chat-head"><span class="online-dot"></span> Libernium Assistant <small>EVENT GUIDE</small></div><div class="chat-messages" id="chatMessages"><div class="bubble bot">Hello! Welcome to LIBERNIUM 2026. Ask me about the schedule, workshops, speakers or campus directions.</div></div><div class="suggestions"><button>What happens at 1 PM?</button><button>Where are the artisan stalls?</button><button>Who are the panel speakers?</button></div><form id="chatForm"><input id="chatInput" placeholder="Ask about LIBERNIUM…" autocomplete="off" aria-label="Ask the event assistant"><button type="submit" aria-label="Send message">↑</button></form><div class="chat-foot">Answers are grounded in the event data available on this website.</div></div>
+  </div>
+</section>
+
+<section class="page section-pad concept-page" id="concept">
+  <div class="concept-top"><span>LIBERATI · DEPARTMENT OF LIBERAL ARTS</span><span>CHRIST UNIVERSITY · BGR CAMPUS</span></div>
+  <div class="concept-title">CONCEPT<br><em>NOTE</em></div>
+  <div id="conceptCopy" class="concept-copy"></div>
+  <div class="concept-bottom"><div><b>LIBERNIUM 2026</b><span>Responsible Consumption & Production</span></div><p>Building a Sustainable Future<br>Through Conscious Choices</p><span>CHRIST (DEEMED TO BE UNIVERSITY)<br>BANGALORE BANNERGHATTA ROAD CAMPUS</span></div>
+</section>
+</main>
+<footer><div class="footer-brand">LIBERNIUM <span>2026</span></div><p>Department of Liberal Arts · CHRIST (Deemed to be University)<br>LIBERATI · Liberal Arts Association</p><a href="#home">Back to top ↑</a><small>Designed for conscious choices.</small></footer>
+</body>
+</html>
