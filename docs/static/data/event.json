@@ -1,0 +1,169 @@
+{
+  "title": "LIBERNIUM 2026",
+  "date": "24 November 2026",
+  "time": "9:00 AM – 4:00 PM",
+  "venue": "CHRIST (Deemed to be University), Bangalore Bannerghatta Road Campus",
+  "department": "Department of Liberal Arts",
+  "association": "LIBERATI · Liberal Arts Association",
+  "theme": "Responsible Consumption & Production",
+  "tagline": "Building a Sustainable Future Through Conscious Choices",
+  "about": "Libernium, organised by the Department of Liberal Arts, is an annual flagship interdisciplinary event that engages with themes such as sustainability, zero-waste living, cultural studies, and regional development. This year's edition centres on responsible consumption and production through workshops, artisan demonstrations and a panel discussion.",
+  "objectives": [
+    "Facilitate experiential and interdisciplinary learning on sustainability and zero-waste living.",
+    "Enable students to critically examine everyday consumption practices and production systems through structured, activity-based learning formats.",
+    "Promote skill-based learning in traditional and contemporary craft practices as a means of understanding sustainable production and material reuse.",
+    "Extend sustainability education through experiential learning alongside the Department's conference tradition."
+  ],
+  "schedule": [
+    {
+      "time": "9:00 – 9:15 AM",
+      "title": "Registration & Networking",
+      "venue": "Campus entry / registration area",
+      "description": "Participant arrival, registration and informal networking."
+    },
+    {
+      "time": "9:15 – 10:00 AM",
+      "title": "Inauguration",
+      "venue": "Mini Auditorium · Second Floor",
+      "description": "Welcome dance by PA; watering of the plant; welcome address by Emmy Ma’am; keynote address; and token of appreciation."
+    },
+    {
+      "time": "10:00 – 10:30 AM",
+      "title": "Tea Break",
+      "venue": "Auditorium Balcony · Second Floor",
+      "description": "Refreshments and informal interaction."
+    },
+    {
+      "time": "10:30 AM – 12:00 PM",
+      "title": "Panel Discussion: The Cost of Being Cool",
+      "venue": "Mini Auditorium · Second Floor",
+      "description": "A discussion exploring consumer culture, fast fashion, social media trends and the hidden environmental and social costs behind staying fashionable and socially relevant.",
+      "people": "Dr Padmakumar · Mr Ashutosh Ananth · Dr Nitya Venkatraman"
+    },
+    {
+      "time": "12:00 – 2:30 PM",
+      "title": "Artisan Stalls & Demonstrations",
+      "venue": "Outside campus, near the additional entry gate",
+      "description": "Live demonstrations of traditional crafts and sustainable making, including weaving, leatherwork and upcycling. When entering campus, take the left-side route towards the additional entry gate; stalls are arranged just before that gate."
+    },
+    {
+      "time": "12:00 – 1:00 PM",
+      "title": "Lunch",
+      "venue": "Auditorium Balcony · Second Floor",
+      "description": "Lunch break."
+    },
+    {
+      "time": "1:00 – 3:00 PM",
+      "title": "Workshop: Social Media, Influencers & Digital Consumption",
+      "venue": "Idea Nexus · Fourth Floor",
+      "description": "An interactive session examining how social media, influencers and algorithms shape digital consumption.",
+      "people": "Resource person: C. Lalremruata"
+    },
+    {
+      "time": "1:00 – 3:00 PM",
+      "title": "Workshop: Closet Remix",
+      "venue": "Seminar Hall · First Floor",
+      "description": "A hands-on upcycling workshop in which participants reimagine an existing garment through creative techniques such as patchwork, embroidery, dyeing and alterations.",
+      "people": "Resource person: Ms Chandarkala D.R."
+    },
+    {
+      "time": "1:00 – 3:00 PM",
+      "title": "Workshop: Responsible Consumption Through Storytelling",
+      "venue": "Mini Auditorium · Second Floor",
+      "description": "A practical storytelling and filmmaking workshop introducing scriptwriting, directing and visual storytelling for sustainability.",
+      "people": "Resource person: Swetansu Bora"
+    },
+    {
+      "time": "3:00 – 3:30 PM",
+      "title": "Valedictory",
+      "venue": "Mini Auditorium · Second Floor",
+      "description": "Experience sharing, token of appreciation for the resource person, and vote of thanks by Jiyaa P. Shah and Sifat Puri."
+    },
+    {
+      "time": "3:30 – 4:00 PM",
+      "title": "Closing & Departure",
+      "venue": "Campus",
+      "description": "The event window concludes. Please follow on-site instructions for departure."
+    }
+  ],
+  "workshops": [
+    {
+      "title": "Social Media, Influencers & Digital Consumption",
+      "time": "1:00 – 3:00 PM",
+      "venue": "Idea Nexus · Fourth Floor",
+      "resource": "C. Lalremruata",
+      "description": "Understand how social media, influencers and algorithms shape viewing habits, purchasing decisions, online engagement and consumption patterns."
+    },
+    {
+      "title": "Closet Remix",
+      "time": "1:00 – 3:00 PM",
+      "venue": "Seminar Hall · First Floor",
+      "resource": "Ms Chandarkala D.R.",
+      "description": "Transform an existing garment using creative upcycling techniques and discover accessible approaches to sustainable fashion."
+    },
+    {
+      "title": "Responsible Consumption Through Storytelling",
+      "time": "1:00 – 3:00 PM",
+      "venue": "Mini Auditorium · Second Floor",
+      "resource": "Swetansu Bora",
+      "description": "Develop an original short-film script or direct and shoot a scene using mobile phones and minimal resources."
+    }
+  ],
+  "panel": {
+    "title": "The Cost of Being Cool",
+    "time": "10:30 AM – 12:00 PM",
+    "venue": "Mini Auditorium · Second Floor",
+    "speakers": [
+      "Mr Ashutosh Ananth — Co-Founder, Rescript Sustainable Stationery",
+      "Dr Nitya Venkatraman — Associate Professor, Department of Knitwear Design, NIFT Bengaluru",
+      "Dr Padmakumar — Associate Professor, Department of Media Studies and Director, Centre for Peace Praxis, CHRIST University"
+    ]
+  },
+  "venue_notes": [
+    {
+      "place": "Mini Auditorium · Second Floor",
+      "detail": "Second floor. Venue for the inauguration, panel discussion, storytelling workshop and valedictory."
+    },
+    {
+      "place": "Artisan Stalls",
+      "detail": "Outside the campus near the additional entry gate. On entering campus, take the left-side route; the stalls are set up just before that gate."
+    },
+    {
+      "place": "Idea Nexus · Fourth Floor",
+      "detail": "Fourth floor. Venue for the Social Media, Influencers & Digital Consumption workshop."
+    },
+    {
+      "place": "Seminar Hall · First Floor",
+      "detail": "First floor. Venue for the Closet Remix workshop."
+    },
+    {
+      "place": "Auditorium Balcony · Second Floor",
+      "detail": "Second floor. Area for the tea break and lunch."
+    }
+  ],
+  "registration": {
+    "openTo": "All",
+    "fee": "₹99 (workshop registration, as stated in the brochure)",
+    "certificate": "Certificates will be provided for participants.",
+    "email": "liberati.association@bgr.christuniversity.in"
+  },
+  "contact": {
+    "email": "liberati.association@bgr.christuniversity.in",
+    "campus": "CHRIST (Deemed to be University), Bangalore Bannerghatta Road Campus",
+    "phone": "080 4655 1306 / 1309",
+    "website": "https://www.christuniversity.in"
+  },
+  "concept_note": {
+    "paragraphs": [
+      "Libernium, organised by the Department of Liberal Arts, is an annual flagship interdisciplinary event that engages with themes such as sustainability, zero-waste living, cultural studies, and regional development. As part of this year's edition, the Department chose a theme ‘Responsible Consumption and Production’, centred on workshops, competitions, and a panel discussion.",
+      "The theme examines consumption not simply as an economic act but as a cultural practice, shaped by production systems, everyday habits, and the ways societies use, discard, and revalue what they make and buy. Centred on this idea, the event brings together artisans, practitioners, and academicians to encourage students to engage critically and creatively with sustainable practices through discussion, collaboration, and experiential learning.",
+      "The event follows a one-day experiential format: the day features hands-on workshops that introduce students to sustainable practices and creative approaches to responsible consumption."
+    ],
+    "objectives": [
+      "Facilitate experiential and interdisciplinary learning on sustainability and zero-waste living.",
+      "Enable students to critically examine everyday consumption practices and production systems through structured, activity-based learning formats.",
+      "Promote skill-based learning in traditional and contemporary craft practices as a means of understanding sustainable production and material reuse.",
+      "Extend the Department's ongoing engagement with sustainability education by broadening Libernium's format to include experiential-based learning alongside its conference tradition."
+    ]
+  }
+}

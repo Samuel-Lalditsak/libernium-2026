@@ -69,3 +69,13 @@ FREE DEPLOYMENT (VERCEL) - alternative to Render, does not sleep
 3. Under Environment Variables add FLASK_SECRET_KEY (any long random text),
    and optionally ADMIN_PASSWORD and OPENAI_API_KEY. Click Deploy.
 4. The site goes live at https://<project-name>.vercel.app.
+
+FREE DEPLOYMENT (GITHUB PAGES) - no extra account, never sleeps
+The docs/ folder is a plain-files copy of the site. The Ask AI assistant answers
+from the event data in the browser. The private admin scanner and live OpenAI
+answers need the Python server, so they are not available on GitHub Pages.
+1. After changing the site, rebuild the copy:  python build_static.py
+2. Commit and push (including docs/).
+3. On GitHub: repository Settings -> Pages -> Source: Deploy from a branch ->
+   pick your branch and the /docs folder -> Save.
+4. The site goes live at https://<your-github-username>.github.io/libernium-2026/
