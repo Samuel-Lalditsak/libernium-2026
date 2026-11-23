@@ -74,7 +74,7 @@ FREE DEPLOYMENT (GITHUB PAGES) - no extra account, never sleeps
 The docs/ folder is a plain-files copy of the site. The Ask AI assistant answers
 from the event data in the browser. The private admin scanner and live OpenAI
 answers need the Python server, so they are not available on GitHub Pages.
-1. After changing the site, rebuild the copy:  python build_static.py
+1. After changing the site, rebuild the copy:  .venv/bin/python build_static.py
 2. Commit and push (including docs/).
 3. Publish the docs/ folder to the gh-pages branch, which GitHub Pages serves:
    git push origin $(git subtree split --prefix docs):gh-pages
