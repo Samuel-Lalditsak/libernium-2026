@@ -76,6 +76,6 @@ from the event data in the browser. The private admin scanner and live OpenAI
 answers need the Python server, so they are not available on GitHub Pages.
 1. After changing the site, rebuild the copy:  python build_static.py
 2. Commit and push (including docs/).
-3. On GitHub: repository Settings -> Pages -> Source: Deploy from a branch ->
-   pick your branch and the /docs folder -> Save.
-4. The site goes live at https://<your-github-username>.github.io/libernium-2026/
+3. Publish the docs/ folder to the gh-pages branch, which GitHub Pages serves:
+   git push origin $(git subtree split --prefix docs):gh-pages
+4. Live site: https://samuel-lalditsak.github.io/libernium-2026/ (updates in 1-2 minutes)
