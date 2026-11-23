@@ -62,3 +62,10 @@ FREE DEPLOYMENT (RENDER)
 4. The site goes live at https://libernium-2026.onrender.com (or a similar name).
 Free services sleep after ~15 minutes without visitors; the first visit after
 that takes about a minute to wake up.
+
+FREE DEPLOYMENT (VERCEL) - alternative to Render, does not sleep
+1. Sign in at https://vercel.com with GitHub (Hobby plan is free, no card needed).
+2. Add New -> Project -> import this repository. Vercel reads vercel.json.
+3. Under Environment Variables add FLASK_SECRET_KEY (any long random text),
+   and optionally ADMIN_PASSWORD and OPENAI_API_KEY. Click Deploy.
+4. The site goes live at https://<project-name>.vercel.app.
