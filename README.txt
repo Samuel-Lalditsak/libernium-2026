@@ -54,3 +54,11 @@ Open static/data/people.json. Each profile supports name, role, group, photo and
 
 EDITING EVENT DETAILS
 Open static/data/event.json. The schedule, workshops, speakers, venue notes, contact information and concept note are stored there.
+
+FREE DEPLOYMENT (RENDER)
+1. Sign in at https://render.com with GitHub (free plan, no card needed).
+2. New -> Blueprint -> choose this repository; Render reads render.yaml.
+3. Optionally set ADMIN_PASSWORD (and OPENAI_API_KEY) when asked, then Apply.
+4. The site goes live at https://libernium-2026.onrender.com (or a similar name).
+Free services sleep after ~15 minutes without visitors; the first visit after
+that takes about a minute to wake up.

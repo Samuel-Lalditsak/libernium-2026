@@ -1,0 +1,19 @@
+# Render Blueprint: deploys the site as a free web service.
+# Render dashboard -> New -> Blueprint -> pick this repo.
+services:
+  - type: web
+    name: libernium-2026
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: FLASK_SECRET_KEY
+        generateValue: true
+      # Set these in the Render dashboard (left blank here so nothing private is committed)
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
