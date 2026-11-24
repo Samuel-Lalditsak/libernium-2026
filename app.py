@@ -35,8 +35,24 @@ def find_people(q, people):
     return found
 
 
+DEVELOPER_ANSWER = ("The LIBERNIUM 2026 website was developed by Samuel Lalditsak Tuoler (Professor) and "
+                    "Shreya S. (Student) from the Department of Liberal Arts, CHRIST University.")
+# Clearly about software: enough with "who" alone. General verbs: only when the question also names the site.
+DEV_TERMS = ["develop", "developed", "developer", "developers", "coded", "programmed", "programmer"]
+MAKE_TERMS = ["built", "build", "builder", "created", "creator", "creators", "designed", "designer", "designers",
+              "made", "maker", "makers", "behind"]
+SITE_TERMS = ["website", "web site", "site", "webpage", "web page", "app", "portal", "chatbot", "assistant", "this"]
+
+
+def is_developer_question(q):
+    return (has_any(q, DEV_TERMS) and (has_any(q, ["who"]) or has_any(q, SITE_TERMS))) or (
+        has_any(q, MAKE_TERMS) and has_any(q, SITE_TERMS))
+
+
 def local_answer(question, event, people):
     q = question.lower()
+    if is_developer_question(q):
+        return DEVELOPER_ANSWER
     found = find_people(q, people)
     if found:
         return "\n".join(f"{p['name']} — {p['role']}" + (f" · {p['phone']}" if p.get('phone') else "") for p in found)
@@ -76,6 +92,8 @@ def ask():
         return jsonify({"answer": "Please enter a question about LIBERNIUM 2026."}), 400
     event = load_json("event.json")
     people = load_json("people.json")
+    if is_developer_question(question.lower()):
+        return jsonify({"answer": DEVELOPER_ANSWER, "mode": "verified-data"})
 
     # Optional live AI: the key stays on the server and is never sent to the browser.
     api_key = os.getenv("OPENAI_API_KEY", "").strip()
