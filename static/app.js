@@ -97,8 +97,17 @@ const escapeRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const hasAny = (text, terms) => terms.some(t => new RegExp(`(?<![\\w:])${escapeRe(t)}(?![\\w:])`).test(text));
 const wordsOf = text => text.toLowerCase().match(/[a-z]+/g) || [];
 
+const DEVELOPER_ANSWER = 'The LIBERNIUM 2026 website was developed by Samuel Lalditsak Tuoler (Professor) and Shreya S. (Student) from the Department of Liberal Arts, CHRIST University.';
+// Clearly about software: enough with "who" alone. General verbs: only when the question also names the site.
+const DEV_TERMS = ['develop', 'developed', 'developer', 'developers', 'coded', 'programmed', 'programmer'];
+const MAKE_TERMS = ['built', 'build', 'builder', 'created', 'creator', 'creators', 'designed', 'designer', 'designers', 'made', 'maker', 'makers', 'behind'];
+const SITE_TERMS = ['website', 'web site', 'site', 'webpage', 'web page', 'app', 'portal', 'chatbot', 'assistant', 'this'];
+const isDeveloperQuestion = q => (hasAny(q, DEV_TERMS) && (hasAny(q, ['who']) || hasAny(q, SITE_TERMS)))
+  || (hasAny(q, MAKE_TERMS) && hasAny(q, SITE_TERMS));
+
 function localAnswer(question) {
   const q = question.toLowerCase();
+  if (isDeveloperQuestion(q)) return DEVELOPER_ANSWER;
   const ev = eventData;
   const qWords = new Set(wordsOf(q));
   const found = peopleData.filter(p => wordsOf(p.name).some(w => w.length > 2 && !TITLES.has(w) && qWords.has(w)));
