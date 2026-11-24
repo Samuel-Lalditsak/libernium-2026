@@ -49,28 +49,3 @@
 @media(min-width:1500px){.section-pad>*{max-width:1400px;margin-left:auto;margin-right:auto}.home-identity-wrap{max-width:1400px!important;margin:0 auto!important}}
 .feedback-card{display:flex;flex-direction:column;gap:8px}.feedback-card h3{margin:4px 0 0}.feedback-btn{align-self:flex-start;margin-top:10px;padding:11px 18px;border-radius:30px;background:var(--purple);color:#fff;font-size:12px;font-weight:700;min-height:40px;display:inline-flex;align-items:center}.feedback-btn:hover{background:var(--purple2)}
 .home-page{background:#f6f3ee!important}.home-identity-wrap{background:#f6f3ee!important}
-/* SDG bucket list: masonry bento grid on the Home page (all rules scoped to .home-sdg / .sdg-*) */
-.home-sdg{width:100%;background:var(--cream)}
-.sdg-link{display:inline-block;margin-top:10px;color:var(--purple);font-weight:700;border-bottom:1px solid currentColor}
-.sdg-link:hover{color:var(--green-dark)}
-.sdg-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:minmax(150px,auto);gap:14px;margin-top:8px}
-.sdg-wide,.sdg-wide-lg{grid-column:span 2}.sdg-tall{grid-row:span 2}.sdg-feature{grid-column:span 2;grid-row:span 2}
-.sdg-tile{display:flex;flex-direction:column;gap:10px;padding:22px;background:#fff;border:1px solid #e7e2e9;border-top:4px solid var(--sdg);color:inherit;transition:transform .2s ease,box-shadow .2s ease}
-.sdg-tile:hover,.sdg-tile:focus-visible{transform:translateY(-3px);box-shadow:var(--shadow)}
-.sdg-tile:focus-visible{outline:2px solid var(--purple);outline-offset:3px}
-.sdg-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.sdg-icon{width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;background:var(--sdg);color:#fff}
-.sdg-icon svg{width:24px;height:24px}
-.sdg-num{font-size:10px;letter-spacing:.19em;font-weight:800;color:var(--muted)}
-.sdg-tile h3{font-family:"Playfair Display";font-size:20px;line-height:1.15;color:var(--purple);margin:4px 0 0}
-.sdg-tile p{font-size:12px;line-height:1.7;color:#6c7268;margin:0}
-.sdg-tall h3{margin-top:auto}.sdg-tall .sdg-icon{width:56px;height:56px;border-radius:14px}.sdg-tall .sdg-icon svg{width:30px;height:30px}
-.sdg-feature{background:var(--purple);border-color:var(--purple);border-top-color:var(--sdg);padding:32px}
-.sdg-feature .sdg-icon{width:64px;height:64px;border-radius:16px}.sdg-feature .sdg-icon svg{width:36px;height:36px}
-.sdg-feature .sdg-num{color:#d9c8e2}
-.sdg-feature h3{color:#fff;font-size:clamp(28px,3vw,40px);margin-top:auto}
-.sdg-feature p{color:#e9dcef;font-size:14px}
-.sdg-tag{align-self:flex-start;font-size:10px;letter-spacing:.16em;font-weight:800;color:var(--ink);background:var(--gold);padding:6px 10px;border-radius:30px}
-@media(max-width:1050px){.sdg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sdg-tall{grid-row:auto}.sdg-tall h3{margin-top:4px}.sdg-wide-lg{grid-column:auto}}
-@media(max-width:520px){.sdg-grid{grid-template-columns:1fr;grid-auto-rows:auto;gap:12px}.sdg-wide,.sdg-feature{grid-column:auto}.sdg-feature{grid-row:auto}.sdg-tile{padding:18px}.sdg-feature{padding:24px}}
-@media(prefers-reduced-motion:reduce){.sdg-tile{transition:none}.sdg-tile:hover{transform:none}}
