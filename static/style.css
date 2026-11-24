@@ -45,7 +45,7 @@
 @media(max-width:520px){.section-pad{padding:56px 5vw}.people-tabs button,.suggestions button{min-height:40px;font-size:12px}.chat input{font-size:16px}.concept-top{font-size:9px}.section-label,.eyebrow{font-size:10px}}
 @media(max-width:360px){.section-heading h2,.assistant h2{font-size:36px}.concept-title{font-size:46px}.people-grid,.compact-grid{gap:18px 10px}}
 /* Large desktops: show all researchers in one row and keep content from stretching */
-@media(min-width:1200px){.compact-grid{grid-template-columns:repeat(5,minmax(0,1fr));max-width:none}}
+@media(min-width:1200px){.compact-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1000px}}@media(min-width:1500px){.compact-grid{grid-template-columns:repeat(6,minmax(0,1fr));max-width:none}}
 @media(min-width:1500px){.section-pad>*{max-width:1400px;margin-left:auto;margin-right:auto}.home-identity-wrap{max-width:1400px!important;margin:0 auto!important}}
 .feedback-card{display:flex;flex-direction:column;gap:8px}.feedback-card h3{margin:4px 0 0}.feedback-btn{align-self:flex-start;margin-top:10px;padding:11px 18px;border-radius:30px;background:var(--purple);color:#fff;font-size:12px;font-weight:700;min-height:40px;display:inline-flex;align-items:center}.feedback-btn:hover{background:var(--purple2)}
 .home-page{background:#f6f3ee!important}.home-identity-wrap{background:#f6f3ee!important}
