@@ -97,7 +97,7 @@ const escapeRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const hasAny = (text, terms) => terms.some(t => new RegExp(`(?<![\\w:])${escapeRe(t)}(?![\\w:])`).test(text));
 const wordsOf = text => text.toLowerCase().match(/[a-z]+/g) || [];
 
-const DEVELOPER_ANSWER = 'The LIBERNIUM 2026 website was developed by Samuel Lalditsak Tuoler (Professor) and Shreya S. (Student) from the Department of Liberal Arts, CHRIST University.';
+const DEVELOPER_ANSWER = 'The LIBERNIUM 2026 website was developed by Mr Samuel Lalditsak Tuolor (Professor) and Shreya S. (Student) from the Department of Liberal Arts, CHRIST University.';
 // Clearly about software: enough with "who" alone. General verbs: only when the question also names the site.
 const DEV_TERMS = ['develop', 'developed', 'developer', 'developers', 'coded', 'programmed', 'programmer'];
 const MAKE_TERMS = ['built', 'build', 'builder', 'created', 'creator', 'creators', 'designed', 'designer', 'designers', 'made', 'maker', 'makers', 'behind'];
